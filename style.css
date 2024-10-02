@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poopins', sans-serif;
+}
+body {
+    display: grid;
+    align-content: center;
+    place-items: center;
+    min-height: 100vh;
+    background-color: rgb(24, 23, 23);
+}
+.wrap {
+    display: flex;
+    align-items: center;
+}
+#container {
+    display: flex;
+    width: 900px;
+    overflow-x: scroll;
+    margin: 0 30px;
+}
+.btn {
+    width: 60px;
+    cursor: pointer;
+}
+#container::-webkit-scrollbar {
+    display: none;
+}
+#container span {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+#container span img {
+    width: 100%;
+    filter: grayscale(100);
+    transition: .3s ease all;
+}
+#container span img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0px 0px 70px 20px rgb(0, 0, 0, .5);
+}
+
+footer {
+    position: absolute;
+    bottom: 15px;
+    background-color: white;
+    border: 3px solid white;
+    padding: 7px 15px 7px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .4s ease-in-out all;
+    margin-top: 20px;
+    max-width: 90%;
+    font-weight: 600;
+    cursor: pointer;
+}
+footer:hover {
+    transform: scale(1.1);
+}
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+#twitter {
+    width: 18px;
+    height: 20px;
+}
+.whatsapp, .github {
+    font-size: 20px;
+}
